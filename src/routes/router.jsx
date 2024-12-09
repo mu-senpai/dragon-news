@@ -6,6 +6,7 @@ import Login from "../components/Login/Login";
 import Signup from "../components/Signup/Signup";
 import NewsDetails from "../components/NewsDetails.jsx/NewsDetails";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
     },
     {
       path: "*",
-      element: <div>ERROR</div>,
+      element: <ErrorPage></ErrorPage>
     },
   ]);
 
